@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
     box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
     background-color: #fafafa;
     transform-origin: top left;
     transition: transform 0.5s linear;
-    width: 100vh;
+    width: 100vw;
     min-height: 100vh;
     padding: 50px;
 }
@@ -38,6 +38,10 @@ body {
     border-radius: 50%;
     position: relative;
     transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
 }
 
 .circle button {
@@ -64,6 +68,10 @@ body {
     top: 60%;
     transform: rotate(90deg);
     transform-origin: top left;
+}
+
+.content image {
+    max-width: 100%;
 }
 
 .container.show-nav + nav li {
@@ -105,10 +113,6 @@ nav ul li + li {
 nav ul li + li + li{
     margin-left: 30px;
     transform: translateX(-200%);
-}
-
-.content image {
-    max-width: 100%;
 }
 
 .content {
